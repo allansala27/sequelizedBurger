@@ -1,0 +1,22 @@
+body {
+	background-color: #E7F3EC;
+}
+
+h1 {
+	font-family: 'Modak', cursive;
+	color: red;
+	font-size: 80px;
+	text-shadow: 5px 5px 10px black;
+	margin-top: 165px;
+	margin-bottom: 70px;
+	position: relative;
+}
+
+#krabby-patty {
+	position: fixed;
+}
+
+#new-burger-input{
+	width: 100%;
+	position: relative;
+}

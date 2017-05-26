@@ -1,0 +1,45 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+			<img id="krabby-patty" src="assets/img/burger.png">
+		</div>
+	</div>
+	<div class ="row">
+		<center>
+			<h1>EAT-DA-BURGER</h1>
+		</center>	
+	</div>
+
+	<div class="row">	
+	<!--Uneaten burgers-->
+		<div class="col-lg-4">	
+			<ul>
+				{{#each uneaten_burgers}}
+					<li>
+						<p>{{this.id}}{{this.burger_name}}</p>
+						<button id="burger-{{this.id}}" type="submit">EAT IT!</button>
+					</li>
+				{{/each}}	
+			</ul>	
+		</div>
+
+	<!--Eaten Burgers-->
+		<div class="col-lg-4">
+			
+			{{>eaten}}
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+			<input id="new-burger-input" type="text" placeholder="New Burger">
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<center>
+    		<button id="burger-submit" type="button" class="btn btn-primary">Add Burger</button>
+    	</center>
+    </div>				
+</div>

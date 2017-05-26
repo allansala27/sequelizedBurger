@@ -1,0 +1,8 @@
+<ul>
+	{{#each uneaten_burgers}}
+		<li>
+			<p>{{this.id}}{{this.burger_name}}</p>
+			<button id="burger-{{this.id}}" type="submit">EAT IT!</button>
+		</li>
+	{{/each}}	
+</ul>		
